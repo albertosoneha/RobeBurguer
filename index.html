@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-pt" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Meta Tag Open graphic-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RobéBurguer - A melhor hamburgueria do Nova Vida!" />
+    <meta property="og:url" content="https://robe-burguer.vercel.app/" />
+    <meta property="og:image" content="https://robe-burguer.vercel.app/assets/hamb-1.png" />
+    <meta property="og:description" content="O Melhor e verdadeiro Hambúrguer Caseiro" />
+    <meta property="og:site_name" content="RobéBurguer" />
+
+    <title>RobéBurguer - A melhor hamburgueria do Nova Vida!</title>
+
+</head>
+
+<body class="text-[16px] font-[400] leading-[1.4] text-[#0a021c] bg-white">
+
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="Logo RobéBurguer"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-amber-500 drop-shadow-lg">
+                RobéBurguer
+            </h1>
+
+            <span class="text-white font-medium drop-shadow-md">Luanda. Nova vida, Rua 26.</span>
+
+            <div class="px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="drop-shadow-sm text-white font-medium">Segunda á Dom - 8:00 ás 21:00</span>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- Fim HEADER -->
+    <div class="rotate-180 h-auto -mt-1">
+        <img src="assets/bg-dark.svg" alt="bg-dark" class="w-full h-full left-0 right-0 sm:bottom-30 align-middle">
+    </div>
+    
+    <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-center pb-14  mb-7 drop-shadow-sm">
+            <i class="text-amber-950  md:text-4xl fa fa-book"></i>
+            Conheça nosso menu
+        </h2>
+    </div>
+    
+    <!-- INÍCIO MENU -->
+    <div id="menu">
+
+        <!--- GRID HAMBURGERS -->
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-10">
+
+            <!-- PRODUTO ITEM 1-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburguer smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hambúrguer Smash</p>
+                    
+                    <p class="text-sm text-gray-600">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>              
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span> 
+                    
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-500">
+                            SKU: 1212
+                        </span>
+                        <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer smash" data-price="1000" data-image="./assets/hamb-1.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO ITEM 1-->
+
+            <!-- PRODUTO ITEM 2-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="Hamburguer duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hambúrguer Duplo</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span>               
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 1312
+                        </span>      
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer duplo" data-price="1000" data-image="./assets/hamb-3.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM 2-->
+
+            <!-- PRODUTO ITEM 3-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="Hamburguer triplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hambúrguer Triplo</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                                    
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-500">
+                            SKU: 112
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer triplo" data-price="1000" data-image="./assets/hamb-2.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM 3-->
+
+            <!-- PRODUTO ITEM 4-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-4.png" alt="Hamburguer salad"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hambúrguer Salad</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 114
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer salad" data-price="1000" data-image="./assets/hamb-4.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO ITEM 4-->
+
+            <!-- PRODUTO ITEM 5-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-7.png" alt="Hamburguer da casa"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hambúrguer da Casa</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000,00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 11
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer da casa" data-price="1000" data-image="./assets/hamb-7.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM  5-->
+
+            <!-- PRODUTO ITEM 6-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-6.png" alt="Hamburguer Especial"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hambúrguer Especial one</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 115
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer especial" data-price="1000" data-image="./assets/hamb-6.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO ITEM  6-->
+
+            <!-- PRODUTO ITEM 7-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-5.png" alt="Hamburguer Maravilha"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hambúrguer Maravilha</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 191
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer Maravilha" data-price="1000" data-image="./assets/hamb-5.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO ITEM  7-->
+
+            <!-- PRODUTO ITEM 8-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-8.png" alt="Hamburguer blow"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hambúrguer Blow</p>
+                    <p class="text-sm text-gray-600 ">
+                        Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
+                    </p>
+                    <span class="pr-2">
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                    </span>
+                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
+                        Entrega grátis
+                    </span>
+                    <div class="flex items-center gap-2 justify-between mt-2">
+                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
+                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
+                            <a href="#">Gostei</a>
+                        </span>
+                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
+                            <a href="#">Partilhar</a>
+                        </span>
+                        <span class="text-[10px] text-gray-600">
+                            SKU: 151
+                        </span>
+                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer blow" data-price="1000" data-image="./assets/hamb-8.png"
+                            aria-label="Adicionar ao carrinho">
+                            <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO ITEM  8-->
+        </main>
+        <!---Fim GRID HAMBURGERS -->
+
+
+
+        <div class="mx-auto max-w-7xl px-4 py-2">
+            <div
+                class=" relative float-left mr-3 mt-3 rounded-full bg-gray-950 text-white opacity-[.8]  border-[5px] h-8 w-8 md:hidden">
+                <i class="fa fa-trend"></i>
+            </div>
+            <h2 class="font-bold mt-3 text-3xl drop-shadow-sm">
+                <i class=" text-red-800 fa fa-fire"></i> 
+                Em Alta
+            </h2>
+        </div>
+
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-container -z-[1]">
+                    <div class="swiper-wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-2 my-10 drop-shadow-sm">
+        <div class="float-left mr-2 rounded-full bg-gray-950 opacity-[.8] -z-[1] border-[5px] top-5  h-8 w-8"> </div>
+        <h2 class="font-bold text-3xl">
+            Bebidas
+        </h2>
+    </div>
+
+    <!--- GRID BEBIDAS -->
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+        <!-- BEBIDA ITEM -->
+        <div class="flex gap-2 w-full">
+            <img src="./assets/refri-1.png" alt="Coca lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div class="w-full">
+                <p class="font-bold">Coca lata</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-semibold bg-[#f4f4f4] text-red-800 rounded px-2 text-lg">200.00 kz</p>
+                    <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]" data-name="Coca lata"
+                        data-price="200" data-image="./assets/refri-1.png" aria-label="Adicionar ao carrinho">
+                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIM BEBIDA ITEM  -->
+
+
+        <!-- BEBIDA ITEM 2-->
+        <div class="flex gap-2 w-full">
+            <img src="./assets/refri-2.png" alt="Guaraná lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+            <div class="w-full">
+                <p class="font-bold">Guaraná lata</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-semibold bg-[#f4f4f4] text-red-800 rounded px-2 text-lg">350.00 kz</p>
+                    <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]" data-name="guarana lata"
+                        data-price="350" data-image="./assets/refri-2.png" aria-label="Adicionar ao carrinho">
+                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- FIM BEBIDA ITEM  -->
+
+    </div>
+    <!---Fim GRID BEBIDAS -->
+
+    <!-- Fim MENU -->
+    <div>
+        <img src="assets/bg-dark.svg" alt="bg-dark"
+            class="w-full h-full align-middle relative top-30 bottom-0 left-0 right-0">
+    </div>
+
+    <!-- MODAL CART -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="font-bold text-2xl text-gray-900 uppercase text-center mb-5"><i
+                    class="px-2 py-1 rounded fa fa-cart-plus text-gray-900"></i>Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega: </p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-red-500 font-medium px-4 py-1 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 font-medium text-white px-4 py-1 rounded">Finalizar
+                    Pedido</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Fim MODAL CART -->
+
+
+    <!-- BUTTON CART FOOTER -->
+    <footer class="w-full bg-red-500  py-2.5  bottom-10 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Ver carrinho de compras
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Fim BUTTON CART FOOTER -->
+
+    <div class="py-[4em] bg-gray-950 text-white">
+        <div class="px-[2em] py-0 my-0 max-sm:px-[1.5em] mx-auto ">
+            <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-[3em] box-border">
+                <div class="box-border" id="widget-footer">
+                    <h3 class="text-[1.5em] mb-[1em] box-border">Serviço</h3>
+                    <ul class="list-none">
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]" href="#">Sobre
+                                Nós</a></li>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]"
+                                href="#">Destaques</a></li>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]" href="#">Nosso
+                                Menu</a></li>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]"
+                                href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="widget-footer">
+                    <h4 class="text-[1.5em] mb-[1em]">Apoio</h4>
+                    <ul>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]"
+                                href="#">Feedback</a></li>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]"
+                                href="#">Perguntas e Respostas</a></li>
+                        <li><a class=" hover:text-[#979b9d] transition-colors no-underline leading-[1.8]"
+                                href="#">Contate-nos</a></li>
+                    </ul>
+                </div>
+                <div class="widget-footer">
+                    <div class="logo">
+                        <a class="transition-colors no-underline 
+                            leading-[1.8] text-[1.5em] font-bold 
+                            uppercase  text-amber-500" href="#">.RobéBurguer
+                        </a>
+                    </div>
+                    <p class="text-[#979b9d] mb-[1em]">Muito gosto em servir-lo.</p>
+                    <p class="text-[#979b9d]">Urb. Nova vida. <br>Luanda, Angola</p>
+                </div>
+            </div>
+            <p class="copyright text-center text-[#979b9d] mt-[5em]">&copy 2024 .RobéFood &reg; .Todos os direitos
+                reservados.</p>
+        </div>
+
+        <!--Links Sociais-->
+        <div class="py-[1.5em] bg-gray-950 text-gray-950 flex items-center " id="footer-info">
+            <div class="max-w-screen-xl mx-auto px-[0.938em] min-[992px]:px-[2em]" id="container">
+                <div class="socials">
+                    <ul class="text-base flex items-center justify-center w-10 h-10 bg-[#979b9d] rounded-[50%] m-[0.2em]    transition-colors"
+                        id="flexitem">
+                        <li
+                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
+                                href="https://x.com/_Man_robe_" target="_blank" referrerpolicy="no-referrer"><i
+                                    class="ri-twitter-line"></i></a>
+                        </li>
+                        <li
+                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
+                                href="https://www.facebook.com/man.rhobe/" target="_blank"
+                                referrerpolicy="no-referrer"><i class="ri-facebook-line"></i></a>
+                        </li>
+                        <li
+                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
+                                href="https://www.instagram.com/_man.robe_/" target="_blank"
+                                referrerpolicy="no-referrer"><i class="ri-instagram-line"></i></a>
+                        </li>
+                        <li
+                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
+                                href="https://www.linkedin.com/in/alberto-mbundi-050a16200/" target="_blank"
+                                referrerpolicy="no-referrer"><i class="ri-linkedin-line"></i></a>
+                        </li>
+                        <li
+                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
+                                href="#" target="_blank" referrerpolicy="no-referrer"><i
+                                    class="ri-youtube-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Links Sociais-->
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
