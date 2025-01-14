@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-pt" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
-        rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/output.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -30,7 +27,6 @@
     <meta property="og:site_name" content="RobéBurguer" />
 
     <title>RobéBurguer - A melhor hamburgueria do Nova Vida!</title>
-
 </head>
 
 <body class="text-[16px] font-[400] leading-[1.4] text-[#0a021c] bg-white">
@@ -60,8 +56,8 @@
     </div>
     
     <div>
-        <h2 class="text-2xl md:text-3xl font-bold text-center pb-14  mb-7 drop-shadow-sm">
-            <i class="text-amber-950  md:text-4xl fa fa-book"></i>
+        <h2 class="border-none text-2xl md:text-3xl font-bold text-center pb-14  -mt-8 mb-7 drop-shadow-sm">
+            <i class="text-gray-900 text md:text-4xl fa fa-book-open"></i>
             Conheça nosso menu
         </h2>
     </div>
@@ -76,36 +72,28 @@
             <div class="flex gap-2">
                 <img src="./assets/hamb-1.png" alt="Hamburguer smash"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-
                 <div>
                     <p class="font-bold">Hambúrguer Smash</p>
                     
-                    <p class="text-sm text-gray-600">
+                    <p class="text-sm text-gray-700">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>              
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">5.0</span>
                     </span> 
-                    
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-500">
-                            SKU: 1212
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer smash" data-price="1000" data-image="./assets/hamb-1.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -124,31 +112,25 @@
 
                 <div>
                     <p class="font-bold">Hambúrguer Duplo</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">5.2</span>
                     </span>               
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 1312
-                        </span>      
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
+                        </span>
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer duplo" data-price="1000" data-image="./assets/hamb-3.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -166,32 +148,26 @@
 
                 <div>
                     <p class="font-bold">Hambúrguer Triplo</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                                    
+                        <span class="text-[13px]">5.5</span>
                     </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-500">
-                            SKU: 112
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer triplo" data-price="1000" data-image="./assets/hamb-2.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -213,24 +189,21 @@
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">3.0</span>
                     </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 114
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer salad" data-price="1000" data-image="./assets/hamb-4.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -248,37 +221,30 @@
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
                 <div>
                     <p class="font-bold">Hambúrguer da Casa</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">4.1</span>
                     </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000,00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 11
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer da casa" data-price="1000" data-image="./assets/hamb-7.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                         </button>
-                        
                     </div>
-                    
                 </div>
             </div>
             <!-- FIM PRODUTO ITEM  5-->
@@ -288,40 +254,32 @@
                 <img src="./assets/hamb-6.png" alt="Hamburguer Especial"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
                 <div>
-                    <p class="font-bold">Hambúrguer Especial one</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="font-bold">Hambúrguer Especial</p>
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">5.3</span>
                     </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 115
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer especial" data-price="1000" data-image="./assets/hamb-6.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                         </button>
                     </div>
-
                 </div>
-
             </div>
             <!-- FIM PRODUTO ITEM  6-->
 
@@ -331,31 +289,27 @@
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
                 <div>
                     <p class="font-bold">Hambúrguer Maravilha</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">3.2</span>
+                    </span>
                     
-                    </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 191
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
-                            data-name="Hamburguer Maravilha" data-price="1000" data-image="./assets/hamb-5.png"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                            data-name="Hamburguer maravilha" data-price="1000" data-image="./assets/hamb-5.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                         </button>
@@ -373,29 +327,26 @@
 
                 <div>
                     <p class="font-bold">Hambúrguer Blow</p>
-                    <p class="text-sm text-gray-600 ">
+                    <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
                     </p>
                     <span class="pr-2">
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
-                        <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
+                        <span class="text-[13px]">3.5</span>
                     </span>
-                    <span class="text-[9px] text-gray-500"><i class=" fa fa-truck"></i> 
-                        Entrega grátis
-                    </span>
-                    <div class="flex items-center gap-2 justify-between mt-2">
-                        <p class="font-semibold bg-[#f4f4f4] text-amber-700 rounded px-2 text-lg">1,000.00 kz</p>
-                        <span class="text-[13px] text-gray-600"><i class=" text-[16px] fa fa-thumbs-up"></i> 
-                            <a href="#">Gostei</a>
+                
+                    <div class="flex items-center gap-2 justify-between">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                        <span class="text-xs px-2 py-1  bg-[#f4f4f4] ">
+                            UQS: <a class="text-yellow-400">111</a>
                         </span>
-                        <span class="text-[13px] text-gray-600"><i class="text-[16px] fa fa-share"></i> 
-                            <a href="#">Partilhar</a>
+                        <span class="text-lg border  px-2  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-heart"></i> 
+                            <a href="#"></a>
                         </span>
-                        <span class="text-[10px] text-gray-600">
-                            SKU: 151
+                        <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                            <a href="#"></a>
                         </span>
-                        <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer blow" data-price="1000" data-image="./assets/hamb-8.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -404,36 +355,24 @@
                 </div>
             </div>
             <!-- FIM PRODUTO ITEM  8-->
-        </main>
-        <!---Fim GRID HAMBURGERS -->
-
-
-
-        <div class="mx-auto max-w-7xl px-4 py-2">
-            <div
-                class=" relative float-left mr-3 mt-3 rounded-full bg-gray-950 text-white opacity-[.8]  border-[5px] h-8 w-8 md:hidden">
-                <i class="fa fa-trend"></i>
-            </div>
-            <h2 class="font-bold mt-3 text-3xl drop-shadow-sm">
-                <i class=" text-red-800 fa fa-fire"></i> 
-                Em Alta
-            </h2>
-        </div>
-
-        <div class="slider">
-            <div class="swiper">
-                <div class="swiper-container -z-[1]">
+            <!---Fim GRID HAMBURGERS -->
+            
+            <div class="swiper max-w-7xl">
+                <h2 class="font-bold text-3xl py-1">
+                    <i class=" text-orange-700 fa fa-fire"></i> 
+                    Em Alta
+                </h2>
+                <div class="swiper-container">
                     <div class="swiper-wrapper">
-
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 
     <div class="mx-auto max-w-7xl px-2 my-10 drop-shadow-sm">
         <div class="float-left mr-2 rounded-full bg-gray-950 opacity-[.8] -z-[1] border-[5px] top-5  h-8 w-8"> </div>
-        <h2 class="font-bold text-3xl">
+        <h2 class="font-bold text-3xl">     
             Bebidas
         </h2>
     </div>
@@ -448,12 +387,22 @@
 
             <div class="w-full">
                 <p class="font-bold">Coca lata</p>
-
+                
                 <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-semibold bg-[#f4f4f4] text-red-800 rounded px-2 text-lg">200.00 kz</p>
-                    <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]" data-name="Coca lata"
-                        data-price="200" data-image="./assets/refri-1.png" aria-label="Adicionar ao carrinho">
-                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                    <p class="font-semibold px-2 text-orange-700 text-lg">200.00 kz</p>
+                    <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i></i> 
+                        <a href="#"></a>
+                    </span>
+                    <span class="text-lg px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i></i> 
+                        <a href="#"></a>
+                    </span>
+                    <span class="text-lg px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                        <a href="#"></a>
+                    </span>
+                    <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        data-name="coca lata" data-price="1000" data-image="./assets/refri-1.png"
+                        aria-label="Adicionar ao carrinho">
+                    <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                     </button>
                 </div>
             </div>
@@ -471,10 +420,20 @@
                 <p class="font-bold">Guaraná lata</p>
 
                 <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-semibold bg-[#f4f4f4] text-red-800 rounded px-2 text-lg">350.00 kz</p>
-                    <button class="bg-gray-900 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]" data-name="guarana lata"
-                        data-price="350" data-image="./assets/refri-2.png" aria-label="Adicionar ao carrinho">
-                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                    <p class="font-semibold  text-orange-700 rounded px-2 text-lg">350.00 kz</p>
+                    <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i></i> 
+                        <a href="#"></a>
+                    </span>
+                    <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i></i> 
+                        <a href="#"></a>
+                    </span>
+                    <span class="text-lg border  px-4  bg-gray-950 rounded border-[#f4f4f4] text-white"><i class="fa fa-share"></i> 
+                        <a href="#"></a>
+                    </span>
+                    <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        data-name="guarana lata" data-price="1000" data-image="./assets/refri-2.png"
+                        aria-label="Adicionar ao carrinho">
+                    <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                     </button>
                 </div>
             </div>
@@ -527,7 +486,7 @@
     </footer>
     <!-- Fim BUTTON CART FOOTER -->
 
-    <div class="py-[4em] bg-gray-950 text-white">
+    <div class="py-[4em] bg-[#0a0a0a] text-white">
         <div class="px-[2em] py-0 my-0 max-sm:px-[1.5em] mx-auto ">
             <div class="grid grid-cols-3 max-sm:grid-cols-1 gap-[3em] box-border">
                 <div class="box-border" id="widget-footer">
@@ -570,40 +529,40 @@
         </div>
 
         <!--Links Sociais-->
-        <div class="py-[1.5em] bg-gray-950 text-gray-950 flex items-center " id="footer-info">
+        <div class="py-[1.5em] bg-[#0a0a0a] text-gray-950 flex items-center " id="footer-info">
             <div class="max-w-screen-xl mx-auto px-[0.938em] min-[992px]:px-[2em]" id="container">
                 <div class="socials">
                     <ul class="text-base flex items-center justify-center w-10 h-10 bg-[#979b9d] rounded-[50%] m-[0.2em]    transition-colors"
                         id="flexitem">
                         <li
-                            class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
+                            class="text-base font-bold flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
                             <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
                                 href="https://x.com/_Man_robe_" target="_blank" referrerpolicy="no-referrer"><i
-                                    class="ri-twitter-line"></i></a>
+                                    class="fa fa-twitter" aria-hidden="true"></i></a>
                         </li>
                         <li
                             class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
                             <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
                                 href="https://www.facebook.com/man.rhobe/" target="_blank"
-                                referrerpolicy="no-referrer"><i class="ri-facebook-line"></i></a>
+                                referrerpolicy="no-referrer"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li
                             class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
                             <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
                                 href="https://www.instagram.com/_man.robe_/" target="_blank"
-                                referrerpolicy="no-referrer"><i class="ri-instagram-line"></i></a>
+                                referrerpolicy="no-referrer"><i class="fa fa-instagram"></i></a>
                         </li>
                         <li
                             class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
                             <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
                                 href="https://www.linkedin.com/in/alberto-mbundi-050a16200/" target="_blank"
-                                referrerpolicy="no-referrer"><i class="ri-linkedin-line"></i></a>
+                                referrerpolicy="no-referrer"><i class="fa fa-linkedin"></i></a>
                         </li>
                         <li
                             class="text-base flex items-center justify-center w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors">
                             <a class="hover:bg-[#e5e8ec]  text-[1.25em] flex items-center justify-center   w-10 h-10 bg-[#e5e8ec] rounded-[50%] m-[0.2em] transition-colors"
                                 href="#" target="_blank" referrerpolicy="no-referrer"><i
-                                    class="ri-youtube-line"></i>
+                                    class="fa fa-whatsapp"></i>
                             </a>
                         </li>
                     </ul>

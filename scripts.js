@@ -51,22 +51,25 @@ const slider_produtos = [
     { nome: "Hambúrguer Especial", img: "assets/hamb-6.png", descricao: "Sinta no seu paladar o especial!"},
     { nome: "Hambúrguer Triplo", img: "assets/hamb-2.png", descricao: "Mate a fome com o Triplo!"},
     { nome: "Hambúrguer Salad", img: "assets/hamb-4.png", descricao: "A base de carne salada e queijo!"},
+    { nome: "Hambúrguer Blow", img: "assets/hamb-8.png", descricao: "A base de carne salada e queijo!"},
+    { nome: "Hambúrguer Maravilha", img: "assets/hamb-5.png", descricao: "A base de carne salada e queijo!"},
 ];
 
 slider_produtos.forEach(produto => {
     document.querySelector('.swiper-wrapper').innerHTML += `
-        <div class="swiper-slide flex flex-col items-center justify-center rounded-lg -z-[1] p-4">
-            <div class="object-cover items-center justify-center rounded-2xl my-6 ">
-                <img src="${produto.img}" alt="${produto.nome}" class="max-w-full h-auto rounded-3xl p-2 hover:cursor-pointer">
+        <div class="swiper-slide flex flex-wrap rounded-3xl items-center  justify-between max-w-7xl px-2 py-10 mx-auto">
+            <div class="object-cover max-w-7xl">
+                <img src="${produto.img}" alt="${produto.nome}" class="align-middle rounded-2xl px-2 hover:cursor-pointer">
             </div>
-            <div class="flex flex-col items-center -mt-5">
-                <h3 class="text-xl  font-bold">${produto.nome}</h3>
-                <h4 class="text-base text-center"><span>${produto.descricao}</span></h4>
-            </div>
-            <div class="mt-2">
-                <span class="p-1"><a href="#"><i class="fa fa-heart"></i> Gosto</a></span>
-                <span class="p-1"><a href="#"><i class="fa fa-gift"></i></a></span>
-                <span class="p-2"><a href="#"><i class="fa fa-share"></i> Partilhar</a></span>
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex flex-wrap items-center justify-center mt-2 px-5 pt-0 pb-0">
+                    <h3 class="text-lg  font-bold">${produto.nome}</h3>
+                    <h4 class=" py-1 text-base text-center"><span>${produto.descricao}</span></h4>
+                </div>
+                <div class="flex flex-wrap items-center justify-between gap-20 m-auto">
+                    <span class="text-lg px-2  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-heart"></i> </a></span>
+                    <span class="text-lg px-4  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-share"></i> </a></span>
+                </div>
             </div>
         </div>`;
 });
@@ -86,7 +89,7 @@ const swiper =  new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 1500,
+        delay: 2500,
         disableOnInteraction: false,
     },
     breakpoints: {
