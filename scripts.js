@@ -57,18 +57,19 @@ const slider_produtos = [
 
 slider_produtos.forEach(produto => {
     document.querySelector('.swiper-wrapper').innerHTML += `
-        <div class="swiper-slide flex flex-wrap rounded-3xl items-center  justify-between max-w-7xl px-2 py-10 mx-auto">
-            <div class="object-cover max-w-7xl">
-                <img src="${produto.img}" alt="${produto.nome}" class="align-middle rounded-2xl px-2 hover:cursor-pointer">
+        <div class="swiper-slide flex flex-wrap rounded-3xl items-center max-w-7xl justify-between md:max-w-7xl px-2 py-10 mx-auto">
+            <div class="object-cover">
+                <img src="${produto.img}" alt="${produto.nome}" class="align-middle m-auto w-[100%] md:w-full rounded-lg  hover:cursor-pointer">
             </div>
-            <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap items-center justify-between gap-2 w-full md:max-w-7xl">
                 <div class="flex flex-wrap items-center justify-center mt-2 px-5 pt-0 pb-0">
                     <h3 class="text-lg  font-bold">${produto.nome}</h3>
                     <h4 class=" py-1 text-base text-center"><span>${produto.descricao}</span></h4>
                 </div>
-                <div class="flex flex-wrap items-center justify-between gap-20 m-auto">
-                    <span class="text-lg px-2  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-heart"></i> </a></span>
+                <div class="flex flex-wrap items-center justify-between gap-10 m-auto max-w-7xl">
+                    <span class="text-lg px-2  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-thumbs-up"></i> </a></span>
                     <span class="text-lg px-4  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-share"></i> </a></span>
+                    <span class="text-lg px-4  rounded bg-gray-950  text-white"><a href="#"><i class=" fa fa-cart-plus"></i> </a></span>
                 </div>
             </div>
         </div>`;
