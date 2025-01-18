@@ -29,7 +29,7 @@
     <title>RobéBurguer - A melhor hamburgueria do Nova Vida!</title>
 </head>
 
-<body class="text-[16px] font-[400] leading-[1.4] text-[#0a021c] bg-white">
+<body class=" text-[16px] font-[400] leading-[1.4] text-[#0a021c] bg-white">
 
     <!-- HEADER -->
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
@@ -51,28 +51,28 @@
 
     </header>
     <!-- Fim HEADER -->
-    <div class="rotate-180 h-auto -mt-1">
-        <img src="assets/bg-dark.svg" alt="bg-dark" class="w-full h-full left-0 right-0 sm:bottom-30 align-middle">
-    </div>
-    
     <div>
-        <h2 class="border-none text-2xl md:text-3xl font-bold text-center pb-14  md:-mt-8 md:mb-7 drop-shadow-sm">
-            <i class="text-gray-900 md:text-4xl fa fa-book-open"></i>
+        <div class=" rotate-180 h-auto -mt-1">
+            <img src="assets/bg-dark.svg" alt="bg-dark" class=" w-full h-full left-0 right-0 sm:bottom-30 align-middle">
+        </div>
+        <h2 class=" text-2xl md:text-3xl font-bold text-center pb-14  md:-mt-8 md:mb-7 drop-shadow-sm">
+            <i class="text-amber-700 border-none outline-none text-yellow-90 md:text-4xl fa fa-book-open"></i>
             Conheça nosso menu
         </h2>
     </div>
     
     <!-- INÍCIO MENU -->
-    <div id="menu">
-
+    <div id="menu ">
+        
         <!--- GRID HAMBURGERS -->
         <main class="grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto md:max-w-7xl px-2 mb-10">
-
+            
             <!-- PRODUTO ITEM 1-->
             <div class="flex gap-2">
+                
                 <img src="./assets/hamb-1.png" alt="Hamburguer smash"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Smash</p>
                     
                     <p class="text-sm text-gray-700">
@@ -82,18 +82,17 @@
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
                         <span class="text-[13px]">5.0</span>
                     </span> 
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class="md:w-fit flex items-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
-                            <button class="text-lg px-4 bg-gray-950 rounded text-white">
+                            <button class="text-lg px-4  bg-gray-950 rounded text-white">
                                 <a href="#"><i class="fa fa-share"></i></a>
                             </button>
                         </div>
-                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer smash" data-price="1000" data-image="./assets/hamb-1.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -104,13 +103,13 @@
 
             </div>
             <!-- FIM PRODUTO ITEM 1-->
-
+            
             <!-- PRODUTO ITEM 2-->
             <div class="flex gap-2">
                 <img src="./assets/hamb-3.png" alt="Hamburguer duplo"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Duplo</p>
                     <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -119,17 +118,17 @@
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
                         <span class="text-[13px]">5.2</span>
                     </span>               
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class="md:w-fit flex items-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
-                            <button class="text-lg px-4 bg-gray-950 rounded text-white">
+                            <button class="text-lg px-4  bg-gray-950 rounded text-white">
                                 <a href="#"><i class="fa fa-share"></i></a>
                             </button>
                         </div>
-                        <button class="bg-gray-950 border border-[#f4f4f4] px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
+                        <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                             data-name="Hamburguer duplo" data-price="1000" data-image="./assets/hamb-3.png"
                             aria-label="Adicionar ao carrinho">
                             <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
@@ -145,7 +144,7 @@
                 <img src="./assets/hamb-2.png" alt="Hamburguer triplo"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Triplo</p>
                     <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -155,9 +154,9 @@
                         <span class="text-[13px]">5.5</span>
                     </span>
                     
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class=" md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -180,7 +179,7 @@
             <div class="flex gap-2">
                 <img src="./assets/hamb-4.png" alt="Hamburguer salad"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Salad</p>
                     <p class="text-sm text-gray-600 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -190,9 +189,9 @@
                         <span class="text-[13px]">3.0</span>
                     </span>
                     
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class=" md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -216,7 +215,7 @@
             <div class="flex gap-2">
                 <img src="./assets/hamb-7.png" alt="Hamburguer da casa"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer da Casa</p>
                     <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -225,9 +224,9 @@
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
                         <span class="text-[13px]">4.1</span>
                     </span>
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class="md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -249,7 +248,7 @@
             <div class="flex gap-2">
                 <img src="./assets/hamb-6.png" alt="Hamburguer Especial"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Especial</p>
                     <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -258,9 +257,9 @@
                         <i class="fa fa-star text-yellow-300 text-base" aria-hidden="true"></i>
                         <span class="text-[13px]">5.3</span>
                     </span>
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class="md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -282,7 +281,7 @@
             <div class="flex gap-2">
                 <img src="./assets/hamb-5.png" alt="Hamburguer Maravilha"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
-                <div>
+                <div class="flex-wrap md:flex-nowrap">
                     <p class="font-bold">Hambúrguer Maravilha</p>
                     <p class="text-sm text-gray-700 ">
                         Pão levinho de fermentação natural, burger 205g, ketchup, e maionese da casa.
@@ -292,9 +291,9 @@
                         <span class="text-[13px]">3.2</span>
                     </span>
                     
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class=" md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -329,9 +328,9 @@
                         <span class="text-[13px]">3.5</span>
                     </span>
                 
-                    <div class="flex items-center flex-wrap md:gap-2 justify-between">
-                        <div class="w-full md:w-fit flex item-center justify-between gap-2 md:gap-4">
-                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000.00 kz</p>
+                    <div class="flex items-center justify-between">
+                        <div class="md:w-fit flex item-center justify-between gap-2 md:gap-4">
+                            <p class="font-semibold text-orange-700 rounded px-2 text-lg">1.000 kz</p>
                             <button class="text-lg px-2 bg-gray-950 rounded text-white">
                                 <i class="fa fa-heart"></i>
                             </button>
@@ -346,22 +345,24 @@
                         </button>
                     </div>
                 </div>
+                
             </div>
             <!-- FIM PRODUTO ITEM  8-->
-            <!---Fim GRID HAMBURGERS -->
-            
+
             <div class="swiper max-w-full md:max-w-7xl">
-                <h2 class="font-bold text-3xl py-1">
+                <h2 class="font-bold text-3xl py-2">
                     <i class=" text-orange-700 fa fa-fire"></i> 
                     Em Alta
                 </h2>
                 <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                    </div>
+                    <div class="swiper-wrapper"></div>
                 </div>
             </div>
+            <!---Swiper-->
         </main>
+        <!---Fim GRID HAMBURGERS -->
     </div>
+
 
     <div class="mx-auto max-w-7xl px-2 my-10 drop-shadow-sm">
         <div class="float-left mr-2 rounded-full bg-gray-950 opacity-[.8] -z-[1] border-[5px] top-5  h-8 w-8"> </div>
@@ -376,26 +377,23 @@
         <!-- BEBIDA ITEM -->
         <div class="flex gap-2">
             <img src="./assets/refri-1.png" alt="Coca lata"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
 
             <div>
                 <p class="font-bold">Coca lata</p>
                 
-                <div class="flex items-center flex-wrap gap-1 md:gap-2 justify-between mt-3">
-                    <p class="font-semibold px-2 text-orange-700 text-lg">200.00 kz</p>
-                    <span class="text-lg  px-4  bg-gray-950 rounded text-white"><i></i> 
-                        <a href="#"></a>
-                    </span>
-                    <span class="text-lg px-4  bg-gray-950 rounded text-white"><i></i> 
-                        <a href="#"></a>
-                    </span>
-                    <span class="text-lg px-4  bg-gray-950 rounded text-white"><i class="fa fa-share"></i> 
-                        <a href="#"></a>
-                    </span>
+                <div class="flex items-center justify-between mt-3 gap-2">
+                    <div class=" flex items-center justify-between gap-20">
+                        <p class="font-semibold px-2 text-orange-700 text-lg">200 kz</p>
+                        <button class="text-lg px-4  bg-gray-950 rounded text-white">
+                            <a href="#"><i class="fa fa-share"></i></a>
+                        </button>
+                    </div>
                     <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                         data-name="coca lata" data-price="200" data-image="./assets/refri-1.png"
                         aria-label="Adicionar ao carrinho">
-                    <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                     </button>
                 </div>
             </div>
@@ -409,24 +407,20 @@
             <img src="./assets/refri-2.png" alt="Guaraná lata"
                 class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
-            <div>
+            <div class="flex-wrap md:flex-nowrap">
                 <p class="font-bold">Guaraná lata</p>
 
-                <div class="flex items-center flex-wrap gap-1 md:gap-2 justify-between mt-3">
-                    <p class="font-semibold  text-orange-700 rounded px-2 text-lg">350.00 kz</p>
-                    <span class="text-lg px-4  bg-gray-950 rounded  text-white"><i></i> 
-                        <a href="#"></a>
-                    </span>
-                    <span class="text-lg px-4  bg-gray-950 rounded text-white"><i></i> 
-                    <a href="#"></a>
-                    </span>
-                    <span class="text-lg px-4  bg-gray-950 rounded text-white"><i class="fa fa-share"></i> 
-                        <a href="#"></a>
-                    </span>
+                <div class="flex items-center justify-between mt-3 gap-2">
+                    <div class="flex items-center justify-between gap-20">
+                        <p class="font-semibold  text-orange-700 rounded px-2 text-lg">350 kz</p>
+                        <button class="text-lg px-4  bg-gray-950 rounded text-white">
+                            <a href="#"><i class="fa fa-share"></i></a>
+                        </button>
+                    </div>
                     <button class="bg-gray-950 px-4 rounded add-to-cart-btn hover:bg-[#f4f4f4]"
                         data-name="guarana lata" data-price="350" data-image="./assets/refri-2.png"
                         aria-label="Adicionar ao carrinho">
-                    <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
+                        <i class="fa fa-cart-plus text-lg text-white hover:text-red-900"></i>
                     </button>
                 </div>
             </div>

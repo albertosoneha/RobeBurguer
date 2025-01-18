@@ -57,7 +57,7 @@ const slider_produtos = [
 
 slider_produtos.forEach(produto => {
     document.querySelector('.swiper-wrapper').innerHTML += `
-    <div class="swiper-slide flex flex-wrap rounded-3xl items-center max-w-7xl justify-between md:max-w-7xl px-2 py-10 mx-auto">
+    <div class="swiper-slide flex flex-wrap  rounded-3xl items-center max-w-7xl justify-between md:max-w-7xl px-2 py-10 mx-auto">
         <div class="object-cover">
             <img src="${produto.img}" alt="${produto.nome}" class="align-middle m-auto w-[100%] md:w-full rounded-lg  hover:cursor-pointer">
         </div>
