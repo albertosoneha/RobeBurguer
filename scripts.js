@@ -239,7 +239,7 @@ checkoutBtn.addEventListener("click", function() {
 // Verificar a hora e manipular o card horário
 function checkRestaurantOpen() {
     const hora = new Date().getHours();
-    return hora >= 8 && hora < 21; // true = restaurante está aberto
+    return hora >= 8 && hora < 21; // se for true = restaurante está aberto, se for false = restaurante está fechado
 }
 
 const spanItem = document.getElementById("date-span");
